@@ -228,6 +228,7 @@ ECC 적용 기준:
 | `silent-failure-hunter` | 에러 삼킴·빈 catch·로깅 누락 |
 | `performance-optimizer` | 불필요한 루프·메모리 누수·렌더링 |
 | `a11y-architect` | aria·키보드 탐색·색상 대비 |
+| `contract-consistency` | 프론트↔백엔드 API 형태·검증 규칙·상태코드·에러 형식·필드 불일치 (단일 스택이면 "해당 없음") |
 
 구현 완료 후:
 
@@ -248,7 +249,8 @@ ECC 적용 기준:
 - [x] silent-failure-hunter 완료
 - [x] performance-optimizer 완료
 - [x] a11y-architect 완료
-6/6 완료
+- [x] contract-consistency 완료 (또는 "해당 없음 — 단일 스택")
+7/7 완료
 
 [심각도별 이슈 목록]
 CRITICAL: X건
