@@ -110,11 +110,8 @@ Q4. 로그인 실패 횟수 제한이 있나요?
 
 사용자 승인 후에만 시작한다.
 
-ECC(`/Users/joojak/Desktop/AI_AGENT/ECC/`)의 코딩 표준을 적용한다.
-
-```bash
-node /Users/joojak/Desktop/AI_AGENT/ECC/scripts/ecc.js [언어]
-```
+ECC(`~/.claude/rules/ecc/`)의 코딩 표준을 적용한다.
+(setup.sh로 설치 시 자동으로 Claude Code에 주입됨)
 
 ECC 적용 기준:
 - 네이밍 컨벤션 준수
