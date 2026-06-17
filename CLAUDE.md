@@ -15,9 +15,10 @@ chmod +x setup.sh && ./setup.sh
 | 도구 | 역할 |
 |------|------|
 | **ECC** | AI 코딩 규칙 자동 주입 (코드 품질 기준선) |
-| **spec-kit** | 기능 구현 전 스펙 문서 자동 생성 |
-| **dev-flow** | spec → TDD → ECC → full-review 4단계 워크플로우 |
-| **full-review** | 코드·보안·DB·성능·a11y 6종 리뷰어 병렬 실행 |
+| **spec-kit** | 기능 구현 전 스펙 3종 문서 자동 생성 (spec / plan / tasks) |
+| **dev-flow** | specify → plan → tasks → TDD → ECC → full-review 6단계 워크플로우 |
+| **full-review** | 코드·보안·DB·silent-failure·성능·a11y·contract-consistency 7종 리뷰어 병렬 실행 |
+| **contract-consistency** | 프론트↔백엔드 API 계약 일치 전담 리뷰어 (양쪽 동시 변경 시 자동 활성화) |
 
 ## 사용법
 
@@ -26,9 +27,11 @@ chmod +x setup.sh && ./setup.sh
 ```
 /dev-flow 회원가입 기능 만들어줘
 ```
-→ 각 단계(spec / TDD / 구현 / 리뷰)마다 사용자 승인 후 진행
+→ 6단계 진행. 매 단계 완료 시 `⏸ GATE [STEP N]` 출력 후 승인 대기.
+→ "진행해" / "다음" / "OK" 입력해야 다음 단계로 이동.
 
 ```
 /full-review
 ```
-→ 최근 변경된 파일 자동 감지 후 6종 리뷰 리포트 출력
+→ 최근 변경된 파일 자동 감지 후 7종 리뷰 리포트 출력.
+→ 프론트+백엔드 동시 변경이면 contract-consistency 자동 활성화.
