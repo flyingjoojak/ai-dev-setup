@@ -1,6 +1,7 @@
 # ai-dev-setup
 
 Claude Code에 **dev-flow & full-review** 워크플로우를 원클릭으로 설치합니다.
+(스킬 본체는 [claude-skills](https://github.com/flyingjoojak/claude-skills) 저장소에서 관리 - 이 레포는 설치 스크립트만)
 
 ## 무엇을 설치하나요?
 
