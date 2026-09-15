@@ -1,6 +1,7 @@
 # ai-dev-setup
 
 이 저장소는 Claude Code에 dev-flow & full-review 워크플로우를 설치하는 도구입니다.
+(스킬 원본은 [claude-skills](https://github.com/flyingjoojak/claude-skills) 저장소에서 관리하고, `setup.sh`가 거기서 받아 설치합니다.)
 
 ## 설치
 
